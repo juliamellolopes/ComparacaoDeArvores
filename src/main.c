@@ -1,13 +1,11 @@
 #include "tree.h"
 #include "avl.h"
 
-
 int main(){
 	int reg[] = {5,3,7,2,4,6,1};
 	Tree *raiz = CreateTree();
 	Tree *aux = CreateTree();
 	Record r;
-
 
 	for(int i = 0; i < 13; i++){
 		r.key = reg[i];
