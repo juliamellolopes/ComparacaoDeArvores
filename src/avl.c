@@ -135,34 +135,6 @@ void removeTree(Tree **t, Tree **f, Record r){
   	
 }
 
-void preordem(Tree *t)
-{
-  if(!(t == NULL)){
-    printf("%d ", t->reg.key);
-    preordem(t->esq); 
-    preordem(t->dir); 
-  }
-}
-
-
-void central(Tree *t)
-{
-  if(!(t == NULL)){
-    central(t->esq); 
-    printf("%d ", t->reg.key);
-    central(t->dir); 
-  }
-}
-
-void posordem(Tree *t)
-{
-  if(!(t == NULL)){
-    posordem(t->esq); 
-    posordem(t->dir); 
-    printf("%d ", t->reg.key);
-  }
-}
-
 int getWeight(Tree **t){
 	if(*t == NULL)
 		return -1;

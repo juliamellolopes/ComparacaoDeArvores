@@ -8,27 +8,25 @@ int main(){
 	Tree *aux = CreateTree();
 	Record r;
 
-	printf("ELEMENTOS DA ARVORE: { ");
-  for(int i=0; i< 7; i++){
+
+	for(int i = 0; i < 13; i++){
 		r.key = reg[i];
 		r.value = 1;
 		insertTree(&raiz, r);
-    printf("%d ", reg[i]);
 	}
-  printf("}\n\n");
 
 	printf("METODO PREORDEM: { ");
-  preordem(raiz);
-  printf("}\n\n");
+  	preordem(raiz);
+  	printf("}\n\n");
 
 
-  printf("METODO CENTRAL: { ");
-  central(raiz);
+  	printf("METODO CENTRAL: { ");
+  	central(raiz);
 	printf("}\n\n");
 
-  printf("METODO POSORDEM: { ");
-  posordem(raiz);
-  printf("}\n\n");
+  	printf("METODO POSORDEM: { ");
+  	posordem(raiz);
+  	printf("}\n\n");
 
 
 	r.key = 2;
@@ -39,7 +37,7 @@ int main(){
 	printf("}\n\n");
 
 	r.key = 3;
-	removeTree(&raiz, r);
+	removeTreeBinaria(&raiz, r);
 
 	printf("REMOVE 3 E IMPRIME A ARVORE { ");
 	central(raiz);

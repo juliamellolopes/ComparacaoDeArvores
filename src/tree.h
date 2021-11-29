@@ -17,13 +17,13 @@ struct Tree{
 	Tree *esq, *dir;
 };
 
-Tree* CreateTree();
-void insertTree(Tree **t, Record r);
-void pesquisa(Tree **t, Tree **aux, Record r);
-int isInTree(Tree *t, Record r);
+Tree* CreateTreeBinaria();
+void insertTreeBinaria(Tree **t, Record r);
+void pesquisaBinaria(Tree **t, Tree **aux, Record r);
+int isInTreeBinaria(Tree *t, Record r);
 
-void removeTree(Tree **t, Record r);
-void antecessor(Tree **t, Tree *aux);
+void removeTreeBinaria(Tree **t, Record r);
+void antecessorBinaria(Tree **t, Tree *aux);
 
 void preordem(Tree *t);
 void central(Tree *t);
