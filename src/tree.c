@@ -1,10 +1,10 @@
 #include "tree.h"
 
-Tree* CreateTreeBinaria(){
+Tree* CreateTree(){
 	return NULL;
 }
 
-void insertTreeBinaria(Tree **t, Record r){
+void insertTree(Tree **t, Record r){
 
   if(*t == NULL){
     *t = (Tree*)malloc(sizeof(Tree));
@@ -15,45 +15,45 @@ void insertTreeBinaria(Tree **t, Record r){
   } else {
     
     if(r.key < (*t)->reg.key){
-      insertTreeBinaria(&(*t)->esq, r);
+      insertTree(&(*t)->esq, r);
     }
     
     if(r.key > (*t)->reg.key){
-      insertTreeBinaria(&(*t)->dir, r);
+      insertTree(&(*t)->dir, r);
     }
   
   }
 
 }
 
-void pesquisaBinaria(Tree **t, Tree **aux, Record r){
+void pesquisa(Tree **t, Tree **aux, Record r){
 
   if(*t == NULL){
     printf("[ERROR]: Node not found!");
     return;
   }
 
-  if((*t)->reg.key > r.key){ pesquisaBinaria(&(*t)->esq, aux, r); return;}
-  if((*t)->reg.key < r.key){ pesquisaBinaria(&(*t)->dir, aux, r); return;}
+  if((*t)->reg.key > r.key){ pesquisa(&(*t)->esq, aux, r); return;}
+  if((*t)->reg.key < r.key){ pesquisa(&(*t)->dir, aux, r); return;}
 
   *aux = *t;
 }
 
 
-int isInTreeBinaria(Tree *t, Record r) {
+int isInTree(Tree *t, Record r) {
   
   if(t == NULL){ 
     return 0;
   }
   
-  return t->reg.key == r.key || isInTreeBinaria(t->esq, r) || isInTreeBinaria(t->dir, r);
+  return t->reg.key == r.key || isInTree(t->esq, r) || isInTree(t->dir, r);
 }
 
 
-void antecessorBinaria(Tree **t, Tree *aux){ 
+void antecessor(Tree **t, Tree *aux){ 
 
 	if ((*t)->dir != NULL){ 
-		antecessorBinaria(&(*t)->dir, aux);
+		antecessor(&(*t)->dir, aux);
 		return;
   }
   	
@@ -64,7 +64,7 @@ void antecessorBinaria(Tree **t, Tree *aux){
 } 
 
 
-void removeTreeBinaria(Tree **t, Record r){
+void removeTree(Tree **t, Record r){
 	Tree *aux;
   	
   	if (*t == NULL){ 
@@ -72,8 +72,8 @@ void removeTreeBinaria(Tree **t, Record r){
     	return;
   	}
 
-  	if (r.key < (*t)->reg.key){ removeTreeBinaria(&(*t)->esq, r); return; }
-  	if (r.key > (*t)->reg.key){ removeTreeBinaria(&(*t)->dir, r); return; }
+  	if (r.key < (*t)->reg.key){ removeTree(&(*t)->esq, r); return; }
+  	if (r.key > (*t)->reg.key){ removeTree(&(*t)->dir, r); return; }
 
   	if ((*t)->dir == NULL){ 
   		aux = *t;  
@@ -82,7 +82,7 @@ void removeTreeBinaria(Tree **t, Record r){
     	return;
   	}
 
-  	if ((*t)->esq != NULL){ antecessorBinaria(&(*t)->esq, *t); return; }
+  	if ((*t)->esq != NULL){ antecessor(&(*t)->esq, *t); return; }
 
   	aux = *t;  
   	*t = (*t)->dir;
