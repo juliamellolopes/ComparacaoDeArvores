@@ -10,7 +10,7 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 
 ### Copilação
 
- Programação feita em C++, na plataforma DevC++, no Windows 10. Abra o arquivo Mikefile.cpp e copile:
+ Programação feita em C, terminal Ubunto na plataforma Visual Studio Code, no Windows 10. Abra o arquivo Mikefile e copile:
 	
     make clean
     make
