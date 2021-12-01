@@ -59,7 +59,27 @@ void resposta(int arv, int entrada, int pesquisa){
 }
 
 void metodo111(){
-    
+	FILE *file;
+	char linha[10];
+	char *result;
+
+    // ==============================
+	// LEITURA
+	// ==============================
+	
+	file = fopen("arquivo.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 50, file);
+
+			if(result)
+				printf("%s", linha);
+		}
+	}
+	fclose(file);
 }
 
 void metodo112(){

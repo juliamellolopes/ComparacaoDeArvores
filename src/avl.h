@@ -23,7 +23,6 @@ void insertTree(Tree **t, Record r);
 void pesquisa(Tree **t, Tree **aux, Record r);
 int isInTree(Tree *t, Record r);
 
-//muda o remove devido a necessidade de ponteiro para sub-árvore desbalanceada
 void removeTree(Tree **t, Tree **f, Record r);
 void antecessor(Tree **t, Tree *aux);
 void rebalanceTree(Tree **t);
