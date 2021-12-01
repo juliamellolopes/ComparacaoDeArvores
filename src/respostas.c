@@ -62,10 +62,6 @@ void metodo111(){
 	FILE *file;
 	char linha[10];
 	char *result;
-
-    // ==============================
-	// LEITURA
-	// ==============================
 	
 	file = fopen("arquivo.txt", "r");
 
