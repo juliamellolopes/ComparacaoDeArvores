@@ -81,7 +81,7 @@ void criandoArquivos(){
     srand(time(NULL)); 
 	char array[100];
 
-	file = fopen("Entarda1000.txt", "w");
+	file = fopen("Entrada1000.txt", "w");
 
     for(int i = 0; i < 1000; i++) {
        	n = get_random(); 
@@ -92,7 +92,7 @@ void criandoArquivos(){
 
 	fclose(file);
 
-	file = fopen("Entarda10000.txt", "w");
+	file = fopen("Entrada10000.txt", "w");
 
     for(int i = 0; i < 10000; i++) {
        	n = get_random(); 
@@ -103,7 +103,7 @@ void criandoArquivos(){
 
 	fclose(file);
 
-	file = fopen("Entarda1000000.txt", "w");
+	file = fopen("Entrada1000000.txt", "w");
 
     for(int i = 0; i < 1000000; i++) {
        	n = get_random(); 
