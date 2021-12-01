@@ -13,11 +13,10 @@ void pesquisas();
 void criandoArquivos();
 
 int main(){
-	//int arv = 0, entrada = 0, pesquisa = 0;
-	//clock_t tempo;
-	//tempo = clock();
+	int arv = 0, entrada = 0, pesquisa = 0;
+	clock_t tempo;
+	tempo = clock();
 
-/*
 	do
 	{
 		menu();
@@ -60,8 +59,7 @@ int main(){
 		}
 	} while (arv != 4);
 	
-	//printf("\n\nTempo: %f",(clock() - tempo) / (double)CLOCKS_PER_SEC);
-*/
+	printf("\n\nTempo: %f",(clock() - tempo) / (double)CLOCKS_PER_SEC);
 
 	return 0;
 }
