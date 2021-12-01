@@ -17,47 +17,38 @@ int main(){
 	clock_t tempo;
 	tempo = clock();
 
-	do
+	menu();
+	scanf("%d",&arv);
+
+	switch (arv)
 	{
-		menu();
-		scanf("%d",&arv);
+	case 1:
+		entradas();
+		scanf("%d",&entrada);
+		pesquisas();
+		scanf("%d", &pesquisa);
+		//resposta(arv, entrada, pesquisa);
+		break;
+		
+	case 2:
+		entradas();
+		scanf("%d",&entrada);
+		pesquisas();
+		scanf("%d", &pesquisa);
+		//resposta(arv, entrada, pesquisa);
+		break;
 
-		switch (arv)
-		{
-		case 1:
-		
-			entradas();
-			scanf("%d",&entrada);
-			pesquisas();
-			scanf("%d", &pesquisa);
-			resposta(arv, entrada, pesquisa);
-			
-			break;
+	case 3:
+		entradas();
+		scanf("%d",&entrada);
+		pesquisas();
+		scanf("%d", &pesquisa);
+		//resposta(arv, entrada, pesquisa);
+		break;
 
-		case 2:
-		
-			entradas();
-			scanf("%d",&entrada);
-			pesquisas();
-			scanf("%d", &pesquisa);
-			resposta(arv, entrada, pesquisa);
-		
-			break;
-
-		case 3:
-		
-			entradas();
-			scanf("%d",&entrada);
-			pesquisas();
-			scanf("%d", &pesquisa);
-			resposta(arv, entrada, pesquisa);
-		
-			break;
-
-		default:
-			break;
-		}
-	} while (arv != 4);
+	default:
+		break;
+	}
 	
 	printf("\n\nTempo: %f",(clock() - tempo) / (double)CLOCKS_PER_SEC);
 
@@ -72,15 +63,15 @@ void menu(){
 }
 
 void entradas(){
-	printf("1)Implementar arvore com 1000 entradas");
-	printf("2)Implementar arvore com 10.000 entradas");
-	printf("3)Implementar arvore com 1.000.000 entradas");
+	printf("1)Implementar arvore com 1000 entradas\n");
+	printf("2)Implementar arvore com 10.000 entradas\n");
+	printf("3)Implementar arvore com 1.000.000 entradas\n");
 }
 
 void pesquisas(){
-	printf("1)Pesquisar em arvore 5.000 itens");
-	printf("2)Pesquisar em arvore 10.000 itens");
-	printf("3)Pesquisar em arvore 100.000 itens");
+	printf("1)Pesquisar em arvore 5.000 itens\n");
+	printf("2)Pesquisar em arvore 10.000 itens\n");
+	printf("3)Pesquisar em arvore 100.000 itens\n");
 }
 
 //metodo feito para criar e preencher os arquivos com os dados de entrada e de pesquisa
@@ -145,9 +136,9 @@ void criandoArquivos(){
 
 	fclose(file);
 
-	file = fopen("Pesquisa1000000.txt", "w");
+	file = fopen("Pesquisa100000.txt", "w");
 
-    for(int i = 0; i < 1000000; i++) {
+    for(int i = 0; i < 100000; i++) {
        	n = get_random(); 
 		sprintf(array, "%6lf", n);
 		strcat(array, "\n");
