@@ -18,14 +18,14 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
   
 ### ExplicaçãoDoCodigo
 
-  Primeiro para serem feitos os arquivos com as entradas com os valores de 1000, 10.000 e 1.000.000 e os arquivos de pesquisa de 5000, 10.000 e 100.000 valores foi feito um metodo que abre arquivos, se não existir ele cria, e os preenche com a quantidade de valores requisitados. Esse codigo vai ficar no main.c, mas a utilização é só para criar os arquivos e preeenchelos.
+  Primeiro para serem feitos os arquivos com as entradas com os valores de 1000, 10.000 e 1.000.000 e os arquivos de pesquisa de 5000, 10.000 e 100.000 valores foi feito um metodo que abre arquivos, se não existir ele cria, e os preenche com a quantidade de valores requisitados. Esse codigo vai ficar no main.c, mas a utilização é só para criar os arquivos e preeenchelos. Metodo com o codigo abaixo:
   
   	void criandoArquivos();
 		
-  A segunda parte é o menu para selecionar o tipo de arvore, a quantidade de entrada e a quantidade de itens a serem pesquisados, como pode ser visto a abaixo:
+  Os arquivos estaram na pasta Arquivos com os nomes: Entrada1000, Entrada10000, Entrada1000000, Pesquisa5000, Pesquisa10000, Pesquisa100000. A segunda parte é o menu para selecionar o tipo de arvore, a quantidade de entrada e a quantidade de itens a serem pesquisados, como pode ser visto a abaixo:
   
-![image](https://user-images.githubusercontent.com/84408875/144319259-435d2f1d-db5c-495e-9516-9bfbd67d9408.png)
-![image](https://user-images.githubusercontent.com/84408875/144319577-a8c7b827-19c5-4acf-8bdb-55378e7cd2f6.png)
-![image](https://user-images.githubusercontent.com/84408875/144319428-e7935c08-1340-46f8-b67f-dfbf73e41672.png)
+![image](https://user-images.githubusercontent.com/84408875/144319848-8fe618dd-4640-4105-a7c7-f2eb4044bc67.png)
+
+  A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h.
 
 ### Resultados
