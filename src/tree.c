@@ -26,15 +26,16 @@ void insertTreeBinaria(Tree **t, Record r){
 
 }
 
-void pesquisaBinaria(Tree **t, Tree **aux, Record r){
+void pesquisaBinaria(Tree **t, Tree **aux, Record r, int *quant){
 
   if(*t == NULL){
     printf("[ERROR]: Node not found!");
     return;
   }
+  (*quant)++;
 
-  if((*t)->reg.key > r.key){ pesquisaBinaria(&(*t)->esq, aux, r); return;}
-  if((*t)->reg.key < r.key){ pesquisaBinaria(&(*t)->dir, aux, r); return;}
+  if((*t)->reg.key > r.key){ pesquisaBinaria(&(*t)->esq, aux, r, quant); return;}
+  if((*t)->reg.key < r.key){ pesquisaBinaria(&(*t)->dir, aux, r, quant); return;}
 
   *aux = *t;
 }
@@ -87,32 +88,4 @@ void removeTreeBinaria(Tree **t, Record r){
   	aux = *t;  
   	*t = (*t)->dir;
   	free(aux);
-}
-
-void preordemBinaria(Tree *t)
-{
-  if(!(t == NULL)){
-    printf("%d ", t->reg.key);
-    preordemBinaria(t->esq); 
-    preordemBinaria(t->dir); 
-  }
-}
-
-
-void centralBinaria(Tree *t)
-{
-  if(!(t == NULL)){
-    centralBinaria(t->esq); 
-    printf("%d ", t->reg.key);
-    centralBinaria(t->dir); 
-  }
-}
-
-void posordemBinaria(Tree *t)
-{
-  if(!(t == NULL)){
-    posordemBinaria(t->esq); 
-    posordemBinaria(t->dir); 
-    printf("%d ", t->reg.key);
-  }
 }

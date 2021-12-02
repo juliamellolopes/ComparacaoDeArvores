@@ -1,6 +1,9 @@
 #ifndef RESPOSTAS_H
 #define RESPOSTAS_H
 
+#include "avl.h"
+#include "tree.h"
+
 #include <stdio.h>
 #include <stdlib.h>
 

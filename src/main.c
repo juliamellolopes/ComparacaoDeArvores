@@ -56,20 +56,19 @@ int main(){
 }
 
 void menu(){
-	printf("1)Arvore Binaria\n");
+	printf("1)\nArvore Binaria\n");
 	printf("2)Arvore AVL\n");
 	printf("3)Arvore Red-Brack\n");
-	printf("4)Sair\n");
 }
 
 void entradas(){
-	printf("1)Implementar arvore com 1000 entradas\n");
+	printf("1)\nImplementar arvore com 1000 entradas\n");
 	printf("2)Implementar arvore com 10.000 entradas\n");
 	printf("3)Implementar arvore com 1.000.000 entradas\n");
 }
 
 void pesquisas(){
-	printf("1)Pesquisar em arvore 5.000 itens\n");
+	printf("1)\nPesquisar em arvore 5.000 itens\n");
 	printf("2)Pesquisar em arvore 10.000 itens\n");
 	printf("3)Pesquisar em arvore 100.000 itens\n");
 }

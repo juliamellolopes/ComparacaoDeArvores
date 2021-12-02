@@ -8,7 +8,7 @@ typedef struct Record Record;
 typedef struct Tree Tree;
 
 struct Record{
-	int key;
+	double key;
 	int value;
 };
 
@@ -19,14 +19,10 @@ struct Tree{
 
 Tree* CreateTreeBinaria();
 void insertTreeBinaria(Tree **t, Record r);
-void pesquisaBinaria(Tree **t, Tree **aux, Record r);
+void pesquisaBinaria(Tree **t, Tree **aux, Record r, int *quant);
 int isInTreeBinaria(Tree *t, Record r);
 
 void removeTreeBinaria(Tree **t, Record r);
 void antecessorBinaria(Tree **t, Tree *aux);
-
-void preordemBinaria(Tree *t);
-void centralBinaria(Tree *t);
-void posordemBinaria(Tree *t);
 
 #endif
