@@ -4,25 +4,25 @@
 #include<stdio.h>
 #include<stdlib.h>
 
-typedef struct Record Record;
-typedef struct Tree Tree;
+typedef struct RecordB RecordB;
+typedef struct TreeB TreeB;
 
-struct Record{
+struct RecordB{
 	double key;
 	int value;
 };
 
-struct Tree{
-	Record reg;
-	Tree *esq, *dir;
+struct TreeB{
+	RecordB reg;
+	TreeB *esq, *dir;
 };
 
-Tree* CreateTreeBinaria();
-void insertTreeBinaria(Tree **t, Record r);
-void pesquisaBinaria(Tree **t, Tree **aux, Record r, int *quant);
-int isInTreeBinaria(Tree *t, Record r);
+TreeB* CreateTreeBinaria();
+void insertTreeBinaria(TreeB **t, RecordB r);
+void pesquisaBinaria(TreeB **t, TreeB **aux, RecordB r, int *quant);
+int isInTreeBinaria(TreeB *t, RecordB r);
 
-void removeTreeBinaria(Tree **t, Record r);
-void antecessorBinaria(Tree **t, Tree *aux);
+void removeTreeBinaria(TreeB **t, RecordB r);
+void antecessorBinaria(TreeB **t, TreeB *aux);
 
 #endif

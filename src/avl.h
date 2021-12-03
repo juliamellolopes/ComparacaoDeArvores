@@ -20,7 +20,7 @@ struct Tree{
 
 Tree* CreateTree();
 void insertTree(Tree **t, Record r);
-void pesquisa(Tree **t, Tree **aux, Record r);
+void pesquisa(Tree **t, Tree **aux, Record r, int *quant);
 int isInTree(Tree *t, Record r);
 
 void removeTree(Tree **t, Tree **f, Record r);

@@ -1,13 +1,13 @@
 #include "tree.h"
 
-Tree* CreateTreeBinaria(){
+TreeB* CreateTreeBinaria(){
 	return NULL;
 }
 
-void insertTreeBinaria(Tree **t, Record r){
+void insertTreeBinaria(TreeB **t, RecordB r){
 
   if(*t == NULL){
-    *t = (Tree*)malloc(sizeof(Tree));
+    *t = (TreeB*)malloc(sizeof(TreeB));
     (*t)->esq = NULL; 
     (*t)->dir = NULL; 
     (*t)->reg = r; 
@@ -26,7 +26,7 @@ void insertTreeBinaria(Tree **t, Record r){
 
 }
 
-void pesquisaBinaria(Tree **t, Tree **aux, Record r, int *quant){
+void pesquisaBinaria(TreeB **t, TreeB **aux, RecordB r, int *quant){
 
   if(*t == NULL){
     printf("[ERROR]: Node not found!");
@@ -41,7 +41,7 @@ void pesquisaBinaria(Tree **t, Tree **aux, Record r, int *quant){
 }
 
 
-int isInTreeBinaria(Tree *t, Record r) {
+int isInTreeBinaria(TreeB *t, RecordB r) {
   
   if(t == NULL){ 
     return 0;
@@ -51,7 +51,7 @@ int isInTreeBinaria(Tree *t, Record r) {
 }
 
 
-void antecessorBinaria(Tree **t, Tree *aux){ 
+void antecessorBinaria(TreeB **t, TreeB *aux){ 
 
 	if ((*t)->dir != NULL){ 
 		antecessorBinaria(&(*t)->dir, aux);
@@ -65,8 +65,8 @@ void antecessorBinaria(Tree **t, Tree *aux){
 } 
 
 
-void removeTreeBinaria(Tree **t, Record r){
-	Tree *aux;
+void removeTreeBinaria(TreeB **t, RecordB r){
+	TreeB *aux;
   	
   	if (*t == NULL){ 
   		printf("[ERROR]: Record not found!!!\n");

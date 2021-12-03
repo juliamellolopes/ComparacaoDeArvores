@@ -41,15 +41,16 @@ void insertTree(Tree **t, Record r){
 }
 
 
-void pesquisa(Tree **t, Tree **aux, Record r){
+void pesquisa(Tree **t, Tree **aux, Record r, int *quant){
 
 	if(*t == NULL){
 		printf("[ERROR]: Node not found!");
 		return;
 	}
+	(*quant)++;
 
-	if((*t)->reg.key > r.key){ pesquisa(&(*t)->esq, aux, r); return;}
-	if((*t)->reg.key < r.key){ pesquisa(&(*t)->dir, aux, r); return;}
+	if((*t)->reg.key > r.key){ pesquisa(&(*t)->esq, aux, r, quant); return;}
+	if((*t)->reg.key < r.key){ pesquisa(&(*t)->dir, aux, r, quant); return;}
 
 	*aux = *t;
 }

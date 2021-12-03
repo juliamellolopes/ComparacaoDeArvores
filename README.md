@@ -26,7 +26,11 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
   
   ![image](https://user-images.githubusercontent.com/84408875/144319848-8fe618dd-4640-4105-a7c7-f2eb4044bc67.png)
 
-  A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h. Analogo a isso, no arquivo de respostas.c é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar uma das possiblidades
+  A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h. Com o metodo abaixo:
+  
+      resposta(arv, entrada, pesquisa);
+  
+  Analogo a isso, no arquivo de respostas.c é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar uma das possiblidades
 
       void metodo111(){
 	   FILE *file;

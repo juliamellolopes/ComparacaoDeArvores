@@ -12,7 +12,7 @@ void resposta(int arv, int entrada, int pesquisa){
 	}else if(arv == 1 && entrada == 2 && pesquisa == 2){
         metodo122();
 	}else if(arv == 1 && entrada == 2 && pesquisa == 3){
-        metodo123()
+        metodo123();
 	}else if(arv == 1 && entrada == 3 && pesquisa == 1){
         metodo131();
 	}else if(arv == 1 && entrada == 3 && pesquisa == 2){
@@ -62,10 +62,10 @@ void metodo111(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
 	double valor;
-	Record r;
+	RecordB r;
 	int quant = 0;
 
 	file = fopen("Arquivos/Entradas1000.txt", "r");
@@ -78,7 +78,7 @@ void metodo111(){
 			if(result){
 				valor = atof(linha);
 				r.key = valor;
-				insertTree(&raiz, r);
+				insertTreeBinaria(&raiz, r);
 			} 
 		}
 	}
@@ -107,10 +107,10 @@ void metodo112(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
 	double valor;
-	Record r;
+	RecordB r;
 	int quant = 0;
 
 	file = fopen("Arquivos/Entradas1000.txt", "r");
@@ -123,7 +123,7 @@ void metodo112(){
 			if(result){
 				valor = atof(linha);
 				r.key = valor;
-				insertTree(&raiz, r);
+				insertTreeBinaria(&raiz, r);
 			} 
 		}
 	}
@@ -152,10 +152,10 @@ void metodo113(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
 	double valor;
-	Record r;
+	RecordB r;
 	int quant = 0;
 
 	file = fopen("Arquivos/Entradas1000.txt", "r");
@@ -168,7 +168,7 @@ void metodo113(){
 			if(result){
 				valor = atof(linha);
 				r.key = valor;
-				insertTree(&raiz, r);
+				insertTreeBinaria(&raiz, r);
 			} 
 		}
 	}
@@ -197,10 +197,10 @@ void metodo121(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
 	double valor;
-	Record r;
+	RecordB r;
 	int quant = 0;
 
 	file = fopen("Arquivos/Entradas10000.txt", "r");
@@ -213,7 +213,7 @@ void metodo121(){
 			if(result){
 				valor = atof(linha);
 				r.key = valor;
-				insertTree(&raiz, r);
+				insertTreeBinaria(&raiz, r);
 			} 
 		}
 	}
@@ -242,8 +242,413 @@ void metodo122(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
+	double valor;
+	RecordB r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTreeBinaria(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisaBinaria(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 10000 pesquisas: %d\n", quant);
+}
+
+void metodo123(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
+	double valor;
+	RecordB r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTreeBinaria(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa100000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisaBinaria(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 100000 pesquisas: %d\n", quant);
+}
+
+void metodo131(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
+	double valor;
+	RecordB r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas1000000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTreeBinaria(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa5000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisaBinaria(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 5000 pesquisas: %d\n", quant);
+}
+
+void metodo132(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
+	double valor;
+	RecordB r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas1000000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTreeBinaria(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisaBinaria(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 10000 pesquisas: %d\n", quant);
+}
+
+void metodo133(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	TreeB *raiz = CreateTreeBinaria();
+  	TreeB *aux = CreateTreeBinaria();
+	double valor;
+	RecordB r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas1000000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTreeBinaria(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa100000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisaBinaria(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 100000 pesquisas: %d\n", quant);
+}
+
+void metodo211(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
+	double valor;
+	Record r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas1000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTree(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa5000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisa(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 5000 pesquisas: %d\n", quant);
+}
+
+void metodo212(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
+	double valor;
+	Record r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas1000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTree(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisa(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 10000 pesquisas: %d\n", quant);
+}
+
+void metodo213(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
+	double valor;
+	Record r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas1000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTree(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisa(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 10000 pesquisas: %d\n", quant);
+}
+
+void metodo221(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
+	double valor;
+	Record r;
+	int quant = 0;
+
+	file = fopen("Arquivos/Entradas10000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.key = valor;
+				insertTree(&raiz, r);
+			} 
+		}
+	}
+	fclose(file);
+
+	file = fopen("Arquivos/Pesquisa5000.txt", "r");
+
+	if(file == NULL)
+		printf("Erro ao abrir\n");
+	else {
+		while(!feof(file)) {
+			result = fgets(linha, 100, file);
+			if(result){
+				valor = atof(linha);
+				r.value = valor;
+				pesquisa(&raiz, &aux, r, &quant);
+			}
+		}
+	}
+	fclose(file);
+
+	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 5000 pesquisas: %d\n", quant);
+}
+
+void metodo222(){
+	FILE *file;
+	char linha[100];
+	char *result;
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
 	double valor;
 	Record r;
 	int quant = 0;
@@ -274,21 +679,21 @@ void metodo122(){
 			if(result){
 				valor = atof(linha);
 				r.value = valor;
-				pesquisaBinaria(&raiz, &aux, r, &quant);
+				pesquisa(&raiz, &aux, r, &quant);
 			}
 		}
 	}
 	fclose(file);
 
-	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 10000 pesquisas: %d\n", quant);
+	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 10000 pesquisas: %d\n", quant);
 }
 
-void metodo123(){
+void metodo223(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
 	double valor;
 	Record r;
 	int quant = 0;
@@ -319,7 +724,7 @@ void metodo123(){
 			if(result){
 				valor = atof(linha);
 				r.value = valor;
-				pesquisaBinaria(&raiz, &aux, r, &quant);
+				pesquisa(&raiz, &aux, r, &quant);
 			}
 		}
 	}
@@ -328,12 +733,12 @@ void metodo123(){
 	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 100000 pesquisas: %d\n", quant);
 }
 
-void metodo131(){
+void metodo231(){	
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
 	double valor;
 	Record r;
 	int quant = 0;
@@ -364,7 +769,7 @@ void metodo131(){
 			if(result){
 				valor = atof(linha);
 				r.value = valor;
-				pesquisaBinaria(&raiz, &aux, r, &quant);
+				pesquisa(&raiz, &aux, r, &quant);
 			}
 		}
 	}
@@ -373,12 +778,12 @@ void metodo131(){
 	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 5000 pesquisas: %d\n", quant);
 }
 
-void metodo132(){
+void metodo232(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
 	double valor;
 	Record r;
 	int quant = 0;
@@ -409,7 +814,7 @@ void metodo132(){
 			if(result){
 				valor = atof(linha);
 				r.value = valor;
-				pesquisaBinaria(&raiz, &aux, r, &quant);
+				pesquisa(&raiz, &aux, r, &quant);
 			}
 		}
 	}
@@ -418,12 +823,12 @@ void metodo132(){
 	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 10000 pesquisas: %d\n", quant);
 }
 
-void metodo133(){
+void metodo233(){
 	FILE *file;
 	char linha[100];
 	char *result;
-	Tree *raiz = CreateTreeBinaria();
-  	Tree *aux = CreateTreeBinaria();
+	Tree *raiz = CreateTree();
+  	Tree *aux = CreateTree();
 	double valor;
 	Record r;
 	int quant = 0;
@@ -454,7 +859,7 @@ void metodo133(){
 			if(result){
 				valor = atof(linha);
 				r.value = valor;
-				pesquisaBinaria(&raiz, &aux, r, &quant);
+				pesquisa(&raiz, &aux, r, &quant);
 			}
 		}
 	}
@@ -463,15 +868,6 @@ void metodo133(){
 	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 100000 pesquisas: %d\n", quant);
 }
 
-void metodo211();
-void metodo212();
-void metodo213();
-void metodo221();
-void metodo222();
-void metodo223();
-void metodo231();
-void metodo232();
-void metodo233();
 void metodo311();
 void metodo312();
 void metodo313();
