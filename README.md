@@ -238,55 +238,55 @@ Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.000000 | 0.000000 | 55000
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.000000 | 0.000000 | 110000
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.000000 | 0.015625 | 110000
 
 Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.031250 | 0.000000 | 65000
 
 Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.015625 | 0.000000 | 130000
 
 Resultados de 10.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.015625 | 0.093750 | 1300000
 
 Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.609375 | 0.000000 | 95000
 
 Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.968750 | 0.000000 | 190000
 
 Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.750000 | 0.062500 | 1900000
 
 #### Arcore Red-Black:
 
