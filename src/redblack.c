@@ -164,15 +164,11 @@ void search(TreeRB **root, TreeRB **aux, double z, int *quant){
             *root = (*root)->LC;
         else 
             *root = (*root)->RC;
+        (*quant)++;    
     }
-
-    (*quant)++;
 
     if ((*root)->key == z){
-        aux = *root;
-    }
-    /*
-    else 
-        printf("Node does not exist\n"); 
-    */    
+        *aux = *root;
+    } else 
+        (*aux) = NULL;
 }

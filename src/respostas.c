@@ -2,7 +2,6 @@
 
 //metodo que chama o metodo com a resposta da opção escolhida
 void resposta(int arv, int entrada, int pesquisa, clock_t *tempoEntrada, clock_t *tempoPesquisa){
-	clock_t tempo;
 	if(arv == 1 && entrada == 1 && pesquisa == 1){
         metodo111(tempoEntrada, tempoPesquisa);
 	}else if(arv == 1 && entrada == 1 && pesquisa == 2){
@@ -92,7 +91,7 @@ void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
@@ -112,9 +111,9 @@ void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
-	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 5000 pesquisas: %d\n", quant);
+	printf("\nQuantidade de pesquisa na arvore binaria com 1000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
 }
 
@@ -148,7 +147,7 @@ void metodo112(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
@@ -168,7 +167,7 @@ void metodo112(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -204,7 +203,7 @@ void metodo113(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
@@ -223,7 +222,7 @@ void metodo113(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 1000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -259,7 +258,7 @@ void metodo121(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
@@ -278,7 +277,7 @@ void metodo121(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -314,7 +313,7 @@ void metodo122(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
@@ -333,7 +332,7 @@ void metodo122(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -369,7 +368,7 @@ void metodo123(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
@@ -388,7 +387,7 @@ void metodo123(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 10000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -424,7 +423,7 @@ void metodo131(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
@@ -443,7 +442,7 @@ void metodo131(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -479,7 +478,7 @@ void metodo132(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
@@ -498,7 +497,7 @@ void metodo132(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -534,7 +533,7 @@ void metodo133(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
@@ -553,7 +552,7 @@ void metodo133(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore binaria com 1000000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -590,7 +589,7 @@ void metodo211(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
@@ -609,7 +608,7 @@ void metodo211(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -645,7 +644,7 @@ void metodo212(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
@@ -664,7 +663,7 @@ void metodo212(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -700,7 +699,7 @@ void metodo213(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
@@ -719,7 +718,7 @@ void metodo213(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -755,7 +754,7 @@ void metodo221(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
@@ -774,7 +773,7 @@ void metodo221(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 10000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -810,7 +809,7 @@ void metodo222(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
@@ -829,7 +828,7 @@ void metodo222(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -865,7 +864,7 @@ void metodo223(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
@@ -884,7 +883,7 @@ void metodo223(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 10000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -920,7 +919,7 @@ void metodo231(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
@@ -939,7 +938,7 @@ void metodo231(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -975,7 +974,7 @@ void metodo232(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
@@ -994,7 +993,7 @@ void metodo232(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1030,7 +1029,7 @@ void metodo233(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file1);
 
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
@@ -1049,7 +1048,7 @@ void metodo233(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore AVL com 1000000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1087,7 +1086,7 @@ void metodo311(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1104,7 +1103,7 @@ void metodo311(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 1000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1141,7 +1140,7 @@ void metodo312(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1158,7 +1157,7 @@ void metodo312(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 1000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1195,7 +1194,7 @@ void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1212,7 +1211,7 @@ void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 1000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1249,7 +1248,7 @@ void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1266,7 +1265,7 @@ void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 10000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1303,7 +1302,7 @@ void metodo322(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1320,7 +1319,7 @@ void metodo322(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 10000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1357,7 +1356,7 @@ void metodo323(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1374,7 +1373,7 @@ void metodo323(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 10000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1411,7 +1410,7 @@ void metodo331(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1428,7 +1427,7 @@ void metodo331(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 1000000 dados de 5000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1465,7 +1464,7 @@ void metodo332(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1482,7 +1481,7 @@ void metodo332(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 1000000 dados de 10000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
@@ -1519,7 +1518,7 @@ void metodo333(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
-	tempoEntrada = clock() - tempo;
+	*tempoEntrada = clock() - tempo;
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1536,7 +1535,7 @@ void metodo333(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	}
 	fclose(file2);
 
-	tempoPesquisa = clock() - tempo;
+	*tempoPesquisa = clock() - tempo;
 
 	printf("Quantidade de pesquisa na arvore red-black com 1000000 dados de 100000 pesquisas: %d\n", quant);
 	printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
