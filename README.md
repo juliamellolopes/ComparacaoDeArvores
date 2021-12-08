@@ -90,6 +90,8 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 
    Esse metodo cria uma arvore com 1000 dados, fara uma pesquisa de 5000 itens nela e no final imprimir a quantidade de vezes que entrou na arvore para achar todos os intens, como a quantidade de entradas, itens pesquisados, o tempo gasto para adicionar os valores na avore e o tempo gasto para fazer a pesquisa. Abaixo sera possivel ver como sera impresso os resultados:
 
+   ![image](https://user-images.githubusercontent.com/84408875/145273554-95f7dcac-6e18-4f92-b009-eeb37844fdf0.png)
+
 
 
 ### Resultados
