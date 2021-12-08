@@ -30,7 +30,7 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		//resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
+		resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
 		break;
 
 	case 3:
@@ -38,7 +38,7 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		//resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
+		resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
 		break;
 
 	default:
@@ -46,7 +46,7 @@ int main(){
 	}
 	
 	printf("\nTempo gasto para fazer a entrada: %f",(tempoEntrada) / (double)CLOCKS_PER_SEC);
-	printf("\nTempo gato para fazer a pesquisa: %f\n",(tempoPesquisa) / (double)CLOCKS_PER_SEC);
+	printf("\nTempo gasto para fazer a pesquisa: %f\n",(tempoPesquisa) / (double)CLOCKS_PER_SEC);
 
 	return 0;
 }

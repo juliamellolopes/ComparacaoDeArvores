@@ -164,7 +164,7 @@ void search(TreeRB **root, TreeRB **aux, double z, int *quant){
             *root = (*root)->LC;
         else 
             *root = (*root)->RC;
-        (*quant)++;    
+    (*quant)++;    
     }
 
     if ((*root)->key == z){
