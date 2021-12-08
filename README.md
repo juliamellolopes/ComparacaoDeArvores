@@ -109,59 +109,59 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
   Analogo a isso, no arquivo de respostas.c e .h é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar a possibilidaded 1,1,1:
 
 		void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa){
-			clock_t tempo;
-			FILE *file1;
-			FILE *file2;
-			char linha[100];
-			char *result;
-			TreeB *raiz = CreateTreeBinaria();
-			TreeB *aux = CreateTreeBinaria();
-			double valor;
-			RecordB r;
-			int quant = 0, cont1 = 0, cont2 = 0;
+		clock_t tempo;
+		FILE *file1;
+		FILE *file2;
+		char linha[100];
+		char *result;
+		TreeB *raiz = CreateTreeBinaria();
+		TreeB *aux = CreateTreeBinaria();
+		double valor;
+		RecordB r;
+		int quant = 0, cont1 = 0, cont2 = 0;
 
-			file1 = fopen("Arquivos/Entrada1000.txt", "r");
+		file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
-			if(file1 == NULL)
-				printf("1Erro ao abrir\n");
-			else {
-				tempo = clock();
-				while(!feof(file1)) {
-				result = fgets(linha, 100, file1);
-					if(result){
-						valor = atof(linha);
-						r.key = valor;
-						insertTreeBinaria(&raiz, r);
-						cont1++;
-					} 
+		if(file1 == NULL)
+			printf("1Erro ao abrir\n");
+		else {
+			tempo = clock();
+			while(!feof(file1)) {
+			result = fgets(linha, 100, file1);
+				if(result){
+					valor = atof(linha);
+					r.key = valor;
+					insertTreeBinaria(&raiz, r);
+					cont1++;
 				}
 			}
-			fclose(file1);
+		}
+		fclose(file1);
 
-			*tempoEntrada = clock() - tempo;
+		*tempoEntrada = clock() - tempo;
 
-			file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
+		file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
-			if(file2 == NULL)
-				printf("2Erro ao abrir\n");
-			else {
-				tempo = clock();
-				while(!feof(file2)) {
-					result = fgets(linha, 100, file2);
-					if(result){
-						valor = atof(linha);
-						r.value = valor;
-						pesquisaBinaria(&raiz, &aux, r, &quant);
-						cont2++;
-					}
+		if(file2 == NULL)
+			printf("2Erro ao abrir\n");
+		else {
+			tempo = clock();
+			while(!feof(file2)) {
+				result = fgets(linha, 100, file2);
+				if(result){
+					valor = atof(linha);
+					r.value = valor;
+					pesquisaBinaria(&raiz, &aux, r, &quant);
+					cont2++;
 				}
 			}
-			fclose(file2);
+		}
+		fclose(file2);
 
-			*tempoPesquisa = clock() - tempo;
+		*tempoPesquisa = clock() - tempo;
 
-			printf("\nQuantidade de pesquisa na arvore binaria com 1000 dados de 5000 pesquisas: %d\n", quant);
-			printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
+		printf("\nQuantidade de pesquisa na arvore binaria com 1000 dados de 5000 pesquisas: %d\n", quant);
+		printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
 		}
 
   Esse metodo cria uma arvore com 1000 dados, fara uma pesquisa de 5000 itens nela. 
