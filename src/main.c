@@ -1,8 +1,6 @@
-//#include "respostas.h"
+#include "respostas.h"
 
-#include <stdio.h>
 #include <time.h>
-#include <stdlib.h>
 #include <string.h>
 
 double get_random() { return ((double)rand() / (double)RAND_MAX *1000); }
@@ -27,7 +25,7 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		//resposta(arv, entrada, pesquisa);
+		resposta(arv, entrada, pesquisa);
 		break;
 		
 	case 2:
@@ -35,7 +33,7 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		//resposta(arv, entrada, pesquisa);
+		resposta(arv, entrada, pesquisa);
 		break;
 
 	case 3:
@@ -50,25 +48,25 @@ int main(){
 		break;
 	}
 	
-	printf("\n\nTempo: %f",(clock() - tempo) / (double)CLOCKS_PER_SEC);
+	printf("\nTempo: %f\n",(clock() - tempo) / (double)CLOCKS_PER_SEC);
 
 	return 0;
 }
 
 void menu(){
-	printf("1)\nArvore Binaria\n");
+	printf("\n1)Arvore Binaria\n");
 	printf("2)Arvore AVL\n");
 	printf("3)Arvore Red-Brack\n");
 }
 
 void entradas(){
-	printf("1)\nImplementar arvore com 1000 entradas\n");
+	printf("\n1)Implementar arvore com 1000 entradas\n");
 	printf("2)Implementar arvore com 10.000 entradas\n");
 	printf("3)Implementar arvore com 1.000.000 entradas\n");
 }
 
 void pesquisas(){
-	printf("1)\nPesquisar em arvore 5.000 itens\n");
+	printf("\n1)Pesquisar em arvore 5.000 itens\n");
 	printf("2)Pesquisar em arvore 10.000 itens\n");
 	printf("3)Pesquisar em arvore 100.000 itens\n");
 }

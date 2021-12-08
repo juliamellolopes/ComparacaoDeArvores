@@ -18,11 +18,13 @@ struct TreeB{
 };
 
 TreeB* CreateTreeBinaria();
+
 void insertTreeBinaria(TreeB **t, RecordB r);
 void pesquisaBinaria(TreeB **t, TreeB **aux, RecordB r, int *quant);
 int isInTreeBinaria(TreeB *t, RecordB r);
 
-void removeTreeBinaria(TreeB **t, RecordB r);
 void antecessorBinaria(TreeB **t, TreeB *aux);
+
+void preordem(TreeB *t);
 
 #endif

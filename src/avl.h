@@ -8,7 +8,7 @@ typedef struct Record Record;
 typedef struct Tree Tree;
 
 struct Record{
-	int key;
+	double key;
 	int value;
 };
 
@@ -23,14 +23,8 @@ void insertTree(Tree **t, Record r);
 void pesquisa(Tree **t, Tree **aux, Record r, int *quant);
 int isInTree(Tree *t, Record r);
 
-void removeTree(Tree **t, Tree **f, Record r);
 void antecessor(Tree **t, Tree *aux);
 void rebalanceTree(Tree **t);
-
-void preordem(Tree *t);
-void central(Tree *t);
-void posordem(Tree *t);
-
 
 int getWeight(Tree **t);
 int getMaxWeight(int left, int right);
@@ -40,6 +34,5 @@ void rotacaoSimplesDireita(Tree **t);
 void rotacaoSimplesEsquerda(Tree **t);
 void rotacaoDuplaDireita(Tree **t);
 void rotacaoDuplaEsquerda(Tree **t);
-
 
 #endif

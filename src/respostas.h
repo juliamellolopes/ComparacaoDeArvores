@@ -4,9 +4,6 @@
 #include "avl.h"
 #include "tree.h"
 
-#include <stdio.h>
-#include <stdlib.h>
-
 void resposta(int arv, int entrada, int pesquisa);
 
 void metodo111();

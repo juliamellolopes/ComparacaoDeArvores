@@ -89,7 +89,7 @@ void rebalanceTree(Tree **t){
 	if((*t)->dir)
 		right = getWeight(&(*t)->dir->esq) - getWeight(&(*t)->dir->dir);
 
-	printf("Item:%d, peso:%d, peso esq:%d, peso dir:%d\n", (*t)->reg.key, balance, left, right);
+	printf("Item:%lf, peso:%d, peso esq:%d, peso dir:%d\n", (*t)->reg.key, balance, left, right);
 
 	if(balance == 2 && left >= 0)
 		rotacaoSimplesDireita(t);
@@ -100,68 +100,6 @@ void rebalanceTree(Tree **t){
 		rotacaoDuplaEsquerda(t);
 	if(balance == -2 && right > 0)
 		rotacaoSimplesEsquerda(t);
-}
-
-void removeTree(Tree **t, Tree **f, Record r){
-	Tree *aux;
-  	
-  	if (*t == NULL){ 
-  		printf("[ERROR]: Record not found!!!\n");
-    	return;
-  	}
-
-  	if (r.key < (*t)->reg.key){ removeTree(&(*t)->esq, t, r); return;}
-  	if (r.key > (*t)->reg.key){ removeTree(&(*t)->dir, t, r); return;}
-
-  	if ((*t)->dir == NULL){ 
-  		aux = *t;  
-  		*t = (*t)->esq;
-    	free(aux);
-    	rebalanceTree(f);
-    	return;
-  	}
-
-  	if ((*t)->esq != NULL){ 
-  		antecessor(&(*t)->esq, *t);
-  		rebalanceTree(f);
-		rebalanceTree(t);
-  		return;
-  	}
-
-  	aux = *t;  
-  	*t = (*t)->dir;
-  	free(aux);
-  	rebalanceTree(f);
-  	rebalanceTree(t); 	
-  	
-}
-
-void preordem(Tree *t)
-{
-  if(!(t == NULL)){
-    printf("%d ", t->reg.key);
-    preordem(t->esq); 
-    preordem(t->dir); 
-  }
-}
-
-
-void central(Tree *t)
-{
-  if(!(t == NULL)){
-    central(t->esq); 
-    printf("%d ", t->reg.key);
-    central(t->dir); 
-  }
-}
-
-void posordem(Tree *t)
-{
-  if(!(t == NULL)){
-    posordem(t->esq); 
-    posordem(t->dir); 
-    printf("%d ", t->reg.key);
-  }
 }
 
 int getWeight(Tree **t){

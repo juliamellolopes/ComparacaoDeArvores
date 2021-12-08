@@ -64,28 +64,11 @@ void antecessorBinaria(TreeB **t, TreeB *aux){
   free(aux);
 } 
 
-
-void removeTreeBinaria(TreeB **t, RecordB r){
-	TreeB *aux;
-  	
-  	if (*t == NULL){ 
-  		printf("[ERROR]: Record not found!!!\n");
-    	return;
-  	}
-
-  	if (r.key < (*t)->reg.key){ removeTreeBinaria(&(*t)->esq, r); return; }
-  	if (r.key > (*t)->reg.key){ removeTreeBinaria(&(*t)->dir, r); return; }
-
-  	if ((*t)->dir == NULL){ 
-  		aux = *t;  
-  		*t = (*t)->esq;
-    	free(aux);
-    	return;
-  	}
-
-  	if ((*t)->esq != NULL){ antecessorBinaria(&(*t)->esq, *t); return; }
-
-  	aux = *t;  
-  	*t = (*t)->dir;
-  	free(aux);
+void preordem(TreeB *t)
+{
+  if(!(t == NULL)){
+    printf("%f ", t->reg.key);
+    preordem(t->esq); 
+    preordem(t->dir); 
+  }
 }
