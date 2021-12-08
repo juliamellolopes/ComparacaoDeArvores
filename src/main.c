@@ -46,7 +46,7 @@ int main(){
 	}
 	
 	printf("\nTempo gasto para fazer a entrada: %f",(tempoEntrada) / (double)CLOCKS_PER_SEC);
-	printf("\nTempo gato para fazer a pesquisa: %f",(tempoPesquisa) / (double)CLOCKS_PER_SEC);
+	printf("\nTempo gato para fazer a pesquisa: %f\n",(tempoPesquisa) / (double)CLOCKS_PER_SEC);
 
 	return 0;
 }
