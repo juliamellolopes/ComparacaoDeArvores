@@ -5,7 +5,7 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 <!--ts-->
    * [Copilação](#Copilação)
    * [ExplicaçãoDoCodigo](#ExplicaçãoDoCodigo)
-   * [Resultados](#Resultados)
+   * [Resultados](#Resultados)     
 <!--te-->
 
 ### Copilação
@@ -18,9 +18,9 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
   
 ### ExplicaçãoDoCodigo
 
-  	Nesse topico sera explicado cada etapa realizada para o desenvolvimento do codigo. É importante resaltar que por enquanto só é possivel fazer um teste por vez no codigo, sera necessário testar 27 vezes para pegar todos os resultados, que seram discutidos no topico de Resultados. Se for possivel , no futuro, sera desenvolvido parar fazer varios testes. 
+  Nesse topico sera explicado cada etapa realizada para o desenvolvimento do codigo. É importante resaltar que por enquanto só é possivel fazer um teste por vez no codigo, sera necessário testar 27 vezes para pegar todos os resultados, que seram discutidos no topico de Resultados. Se for possivel , no futuro, sera desenvolvido parar fazer varios testes. 
 
-  	Primeiro, para serem feitos os arquivos com as entradas com os valores de 1000, 10.000 e 1.000.000 e os arquivos de pesquisa de 5000, 10.000 e 100.000 valores foi feito um metodo que abre arquivos, se não existir ele cria, e os preenche com a quantidade de valores requisitados. Esse codigo vai ficar no main.c, mas a utilização é só para criar os arquivos e preeenchelos. Metodo com o codigo abaixo:
+  Primeiro, para serem feitos os arquivos com as entradas com os valores de 1000, 10.000 e 1.000.000 e os arquivos de pesquisa de 5000, 10.000 e 100.000 valores foi feito um metodo que abre arquivos, se não existir ele cria, e os preenche com a quantidade de valores requisitados. Esse codigo vai ficar no main.c, mas a utilização é só para criar os arquivos e preeenchelos. Metodo com o codigo abaixo:
   
 		void criandoArquivos();
 
@@ -97,15 +97,16 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 			fclose(file);
 		}
 		
- 	 Os arquivos estaram na pasta Arquivos com os nomes: Entrada1000, Entrada10000, Entrada1000000, Pesquisa5000, Pesquisa10000, Pesquisa100000. Segundo, desenvolver o menu para selecionar o tipo de arvore, a quantidade de entrada e a quantidade de itens a serem pesquisados, como pode ser visto a abaixo:
+		
+  Os arquivos estaram na pasta Arquivos com os nomes: Entrada1000, Entrada10000, Entrada1000000, Pesquisa5000, Pesquisa10000, Pesquisa100000. Segundo, desenvolver o menu para selecionar o tipo de arvore, a quantidade de entrada e a quantidade de itens a serem pesquisados, como pode ser visto a abaixo:
   
   ![image](https://user-images.githubusercontent.com/84408875/144319848-8fe618dd-4640-4105-a7c7-f2eb4044bc67.png)
 
-  	A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h. Com o metodo abaixo:
+  A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h. Com o metodo abaixo:
   
       	resposta(arv, entrada, pesquisa);
   
-  	Analogo a isso, no arquivo de respostas.c e .h é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar a possibilidaded 1,1,1:
+  Analogo a isso, no arquivo de respostas.c e .h é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar a possibilidaded 1,1,1:
 
 		void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 			clock_t tempo;
@@ -163,74 +164,182 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 			printf("Entradas: %d \nPesquisas: %d", cont1,cont2);
 		}
 
-   Esse metodo cria uma arvore com 1000 dados, fara uma pesquisa de 5000 itens nela. 
+  Esse metodo cria uma arvore com 1000 dados, fara uma pesquisa de 5000 itens nela. 
 
-   Ao finalizar o codigo sera impresso a quantidade de vezes que entrou na arvore para achar todos os intens, como a quantidade de entradas, itens pesquisados, o tempo gasto para adicionar os valores na avore e o tempo gasto para fazer a pesquisa. Abaixo sera possivel ver como aparecera:
+  Ao finalizar o codigo sera impresso a quantidade de vezes que entrou na arvore para achar todos os intens, como a quantidade de entradas, itens pesquisados, o tempo gasto para adicionar os valores na avore e o tempo gasto para fazer a pesquisa. Abaixo sera possivel ver como aparecera:
 
    ![image](https://user-images.githubusercontent.com/84408875/145273554-95f7dcac-6e18-4f92-b009-eeb37844fdf0.png)
 
-   Ultilizando um contador chamado quant sera possivel medir a quantidade de vezes que foi reita a pesquisa para acha os valores do aarquivo, é usado tambem a função clock_t foi possivel calcular o tempo de inserção dos dados a arvore e o tempo de pesquisa. O contador se encontra denro das estruturas de arvore, dentro do metodo de pesquisa, já os contadores de tempo estão dentro de cada metodo no arquivo respostas.c .
+  Ultilizando um contador chamado quant sera possivel medir a quantidade de vezes que foi reita a pesquisa para acha os valores do aarquivo, é usado tambem a função clock_t foi possivel calcular o tempo de inserção dos dados a arvore e o tempo de pesquisa. O contador se encontra denro das estruturas de arvore, dentro do metodo de pesquisa, já os contadores de tempo estão dentro de cada metodo no arquivo respostas.c .
 
 ### Resultados
 
-	Nesse topico sera apresentados os resultados encontrados em tipo de arvore com suas diferentes implementações de entradas e pesquisas.
+Nesse topico sera apresentados os resultados encontrados em tipo de arvore com suas diferentes implementações de entradas e pesquisas.
 
-	#### Arcore Binaria:
+#### Arcore Binaria:
 
-	Resultados de 1.000 entradas e 5.000 dados pesquisados:
+Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
-	Resultados de 1.000 entradas e 10.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000 entradas e 100.000 dados pesquisados:
+Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
-	Resultados de 10.000 entradas e 5.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 10.000 entradas e 10.000 dados pesquisados:
+Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
-	Resultados de 10.000 entradas e 100.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
+Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
-	Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
+Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
-	#### Arcore AVL:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000 entradas e 5.000 dados pesquisados:
+Resultados de 10.000 entradas e 100.000 dados pesquisados:
 
-	Resultados de 1.000 entradas e 10.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000 entradas e 100.000 dados pesquisados:
+Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
 
-	Resultados de 10.000 entradas e 5.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 10.000 entradas e 10.000 dados pesquisados:
+Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
 
-	Resultados de 10.000 entradas e 100.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
+Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 
-	Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
+#### Arcore AVL:
 
-	#### Arcore Red-Black:
+Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
-	Resultados de 1.000 entradas e 5.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000 entradas e 10.000 dados pesquisados:
+Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
-	Resultados de 1.000 entradas e 100.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 10.000 entradas e 5.000 dados pesquisados:
+Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
-	Resultados de 10.000 entradas e 10.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 10.000 entradas e 100.000 dados pesquisados:
+Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
-	Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
 
-	Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
+Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
-	Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 10.000 entradas e 100.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+#### Arcore Red-Black:
+
+Resultados de 1.000 entradas e 5.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000 entradas e 10.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000 entradas e 100.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 10.000 entradas e 5.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 10.000 entradas e 10.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 10.000 entradas e 100.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
+
+Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
+
+Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
+:--------- | :------: | -------:
+Valor | Valor | Valor
