@@ -344,3 +344,7 @@ Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
 Valor | Valor | Valor
+
+### Conclusão
+
+Ao analisar os dados mostrados podemos concluir: 
