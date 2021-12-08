@@ -1,8 +1,5 @@
 #include "respostas.h"
 
-#include <time.h>
-#include <string.h>
-
 double get_random() { return ((double)rand() / (double)RAND_MAX *1000); }
 
 void menu();
@@ -12,8 +9,8 @@ void criandoArquivos();
 
 int main(){
 	int arv = 0, entrada = 0, pesquisa = 0;
-	clock_t tempo;
-	tempo = clock();
+	clock_t tempoEntrada;
+	clock_t tempoPesquisa;
 
 	menu();
 	scanf("%d",&arv);
@@ -25,7 +22,7 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		resposta(arv, entrada, pesquisa);
+		resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
 		break;
 		
 	case 2:
@@ -33,7 +30,7 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		resposta(arv, entrada, pesquisa);
+		//resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
 		break;
 
 	case 3:
@@ -41,14 +38,15 @@ int main(){
 		scanf("%d",&entrada);
 		pesquisas();
 		scanf("%d", &pesquisa);
-		//resposta(arv, entrada, pesquisa);
+		//resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
 		break;
 
 	default:
 		break;
 	}
 	
-	printf("\nTempo: %f\n",(clock() - tempo) / (double)CLOCKS_PER_SEC);
+	printf("\nTempo: %f\n",(tempoEntrada) / (double)CLOCKS_PER_SEC);
+	printf("\nTempo: %f\n",(tempoPesquisa) / (double)CLOCKS_PER_SEC);
 
 	return 0;
 }

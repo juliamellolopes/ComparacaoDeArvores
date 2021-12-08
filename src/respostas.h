@@ -3,35 +3,39 @@
 
 #include "avl.h"
 #include "tree.h"
+#include "redblack.h"
 
-void resposta(int arv, int entrada, int pesquisa);
+#include <time.h>
+#include <string.h>
 
-void metodo111();
-void metodo112();
-void metodo113();
-void metodo121();
-void metodo122();
-void metodo123();
-void metodo131();
-void metodo132();
-void metodo133();
-void metodo211();
-void metodo212();
-void metodo213();
-void metodo221();
-void metodo222();
-void metodo223();
-void metodo231();
-void metodo232();
-void metodo233();
-void metodo311();
-void metodo312();
-void metodo313();
-void metodo321();
-void metodo322();
-void metodo323();
-void metodo331();
-void metodo332();
-void metodo333();
+void resposta(int arv, int entrada, int pesquisa, clock_t *tempoEntrada, clock_t *tempoPesquisa);
+
+void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo112(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo113(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo121(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo122(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo123(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo131(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo132(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo133(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo211(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo212(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo213(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo221(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo222(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo223(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo231(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo232(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo233(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo311(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo312(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo322(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo323(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo331(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo332(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+void metodo333(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 
 #endif
