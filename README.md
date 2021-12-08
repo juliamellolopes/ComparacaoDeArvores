@@ -1,4 +1,4 @@
-<h1 align="center">Trabalho: Comaração de Arvores</h1>
+<h1 align="center">Trabalho: Comparação de Arvores</h1>
 Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tempo gasto de 3 tipos de arvores para efetuar o preenchimento da avore e a pesquisa de alguns valores. No algoritmo sera possivel escolher o a arvore, o numero de dados que quer preencher nela e depois os dados a serem pesquisados, só sera possivel ver o resultado de uma arvore de cada vez no algoritmo. Aqui sera possivel ver como foi desenvolvido o codigo e o resultado encontrado.
 
 ### Sumário
