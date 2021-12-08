@@ -182,55 +182,55 @@ Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.000000 | 0.015625 | 65000
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.000000 | 0.015625 | 130000
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.000000 | 0.078125 | 1300000
 
 Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.015625 | 0.000000 | 65000
 
 Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.015625 | 0.015625 | 130000
 
 Resultados de 10.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.015625 | 0.062500 | 1300000
 
 Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+1.828125 | 0.000000 | 165000
 
 Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+1.703125 | 0.000000 | 330000
 
 Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.125000 | 0.078125 | 3300000
 
 #### Arcore AVL:
 
