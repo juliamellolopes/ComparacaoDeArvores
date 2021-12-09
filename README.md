@@ -108,7 +108,7 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 
   A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h. Com o metodo abaixo:
   
-      	resposta(arv, entrada, pesquisa);
+      	resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
   
   Analogo a isso, no arquivo de respostas.c e .h é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar a possibilidaded 1,1,1:
 
