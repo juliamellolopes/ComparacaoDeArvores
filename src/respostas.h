@@ -1,14 +1,16 @@
 #ifndef RESPOSTAS_H
 #define RESPOSTAS_H
 
+#include "rb.h"
 #include "avl.h"
 #include "tree.h"
-#include "redblack.h"
 
 #include <time.h>
 #include <string.h>
 
 void resposta(int arv, int entrada, int pesquisa, clock_t *tempoEntrada, clock_t *tempoPesquisa);
+
+void preordemRB(TreeRB *root);
 
 void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo112(clock_t *tempoEntrada, clock_t *tempoPesquisa);
@@ -29,6 +31,7 @@ void metodo231(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo232(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo233(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo311(clock_t *tempoEntrada, clock_t *tempoPesquisa);
+/*
 void metodo312(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa);
@@ -37,5 +40,5 @@ void metodo323(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo331(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo332(clock_t *tempoEntrada, clock_t *tempoPesquisa);
 void metodo333(clock_t *tempoEntrada, clock_t *tempoPesquisa);
-
+*/
 #endif

@@ -63,12 +63,3 @@ void antecessorBinaria(TreeB **t, TreeB *aux){
   *t = (*t)->esq;
   free(aux);
 } 
-
-void preordem(TreeB *t)
-{
-  if(!(t == NULL)){
-    printf("%f ", t->reg.key);
-    preordem(t->esq); 
-    preordem(t->dir); 
-  }
-}

@@ -1,4 +1,4 @@
-#include "redblack.h"
+#include "rb.h"
 
 TreeRB *temp, *nill;
 
@@ -12,7 +12,7 @@ void creatTreeRB(TreeRB **root){
     (*root)       = nill;
 }
 
-void insertTreeRB(TreeRB **root, double data) {
+void insertTreeRB(TreeRB **root, double data, int *cont1) {
     double chk = 0;
     
     if ((temp = (TreeRB *) malloc(sizeof(TreeRB))) != NULL){
@@ -24,9 +24,10 @@ void insertTreeRB(TreeRB **root, double data) {
         chk         = check(*root,data,0);
         if(chk == 0){
             rb_insert(*root, nill, temp, root);
+            (*cont1)++;
         }
         else{
-            printf("Node already registered: %lf\n", data);   fflush(stdout);
+             printf("Node already registered: %lf\n", data);   fflush(stdout);
             free(temp);
         }
     }
@@ -95,18 +96,20 @@ void fix_insert(TreeRB *aux, TreeRB **root){
                 aux->P->P->color = red;	
                 aux              = aux->P->P;
             }
+            
             else{
                 if (aux == aux->P->LC){
                     aux = aux->P;
                     Right_Rotate(aux, root);
                 }
+                
                 aux->P->color    = black;		
                 aux->P->P->color = red;
                 Left_Rotate(aux->P->P, root);
             }
         }
     }
-    (*root)->color = black; 						
+    (*root)->color = black; 							
 }
 
 void rb_insert(TreeRB *x, TreeRB *y, TreeRB *temp, TreeRB **root){
@@ -118,26 +121,26 @@ void rb_insert(TreeRB *x, TreeRB *y, TreeRB *temp, TreeRB **root){
             x = x->RC;
     }
     temp->P=y;
-    if (y == nill)             				
+    if (y == nill)                 			
         *root = temp;
     else if (temp->key < y->key)   
         y->LC = temp;
-    else                           
+    else                            
         y->RC = temp;
     temp->LC    = nill;             
     temp->RC    = nill;
-    temp->color = red;            
-    fix_insert(temp, root);               
+    temp->color = red;              
+    fix_insert(temp, root);              
 }
 
 void RB_transplant(TreeRB *aux, TreeRB *auxchild, TreeRB **root){
     if (aux->P == nill)            
         *root = auxchild;
-    else if (aux == aux->P->LC)    
-        aux->P->LC = auxchild;    
+    else if (aux == aux->P->LC)     
+        aux->P->LC = auxchild;      
     else 
-    	aux->P->RC = auxchild;    
-    auxchild->P = aux->P;	  
+    	aux->P->RC = auxchild;     
+    auxchild->P = aux->P;	   
 }
 
 TreeRB *tree_successor(TreeRB *aux_succ){
@@ -146,7 +149,21 @@ TreeRB *tree_successor(TreeRB *aux_succ){
     return aux_succ;
 }
 
-int check(TreeRB *aux, int z, int chk){
+void search(TreeRB *root, TreeRB **aux, double z, int *quant,  int *cont2){
+    (*cont2)++;
+    while (root != nill && z != (root)->key){
+        if (z < (root)->key)
+            root = (root)->LC;
+        else 
+            root = (root)->RC;
+        (*quant)++;        
+    }
+    // if ((root)->key == z){
+         *aux = root;
+    // }
+}
+
+int check(TreeRB *aux, double z, int chk){
     while (aux != nill && z != aux->key){
         if (z < aux->key)
             aux = aux->LC;
@@ -158,17 +175,10 @@ int check(TreeRB *aux, int z, int chk){
     return chk;
 }
 
-void search(TreeRB **root, TreeRB **aux, double z, int *quant){
-    while (*root != nill && z != (*root)->key){
-        if (z < (*root)->key)
-            *root = (*root)->LC;
-        else 
-            *root = (*root)->RC;
-    (*quant)++;    
-    }
-
-    if ((*root)->key == z){
-        *aux = *root;
-    } else 
-        (*aux) = NULL;
-}
+// void preordemRB(TreeRB *aux) {
+//     if(aux != NULL && aux->key != 0) {
+//         printf("%lf ", aux->key);
+//         preordemRB(aux->LC);
+//         preordemRB(aux->RC);
+//     }
+// }

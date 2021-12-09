@@ -25,6 +25,4 @@ int isInTreeBinaria(TreeB *t, RecordB r);
 
 void antecessorBinaria(TreeB **t, TreeB *aux);
 
-void preordem(TreeB *t);
-
 #endif
