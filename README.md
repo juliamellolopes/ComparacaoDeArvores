@@ -5,7 +5,10 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 <!--ts-->
    * [Copilação](#Copilação)
    * [ExplicaçãoDoCodigo](#ExplicaçãoDoCodigo)
-   * [Resultados](#Resultados)   
+   * [Resultados](#Resultados) 
+   		* [ArvoreBinaria](#ArvoreBinaria)
+   		* [ArvoreAVL](#ArvoreAVL)
+   		* [ArvoreRed-Black](#ArvoreRed-Black)
    * [Conclusão](#Conclusão)  
 <!--te-->
 
@@ -105,7 +108,7 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 
   A partir das escolhas feitas no menu, serão enviados os dados para um metodo que vai dirigir-se para a resolução do problema no arquivo respostas.c e respostas.h. Com o metodo abaixo:
   
-      	resposta(arv, entrada, pesquisa);
+      	resposta(arv, entrada, pesquisa, &tempoEntrada, &tempoPesquisa);
   
   Analogo a isso, no arquivo de respostas.c e .h é posssivel ver 27 metodos que correspondem as 27 possiblilidades de tipos de arvores e pesquisas. Abaixo é possivel ver um dos metodos usados para realizar a possibilidaded 1,1,1:
 
@@ -177,7 +180,7 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 
 Nesse topico sera apresentados os resultados encontrados em tipo de arvore com suas diferentes implementações de entradas e pesquisas.
 
-#### Arvore Binaria:
+#### ArvoreBinaria:
 
 Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
@@ -233,19 +236,19 @@ Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
 2.125000 | 0.078125 | 3300000
 
-#### Arvore AVL:
+#### ArvoreAVL:
 
 Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.000000 | 55000
+0.015625 | 0.015625 | 55000
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.000000 | 110000
+0.000000 | 0.015625 | 110000
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
@@ -289,7 +292,7 @@ Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
 2.750000 | 0.062500 | 1900000
 
-#### Arvore Red-Black:
+#### ArvoreRed-Black:
 
 Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
