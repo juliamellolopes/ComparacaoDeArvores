@@ -73,8 +73,8 @@ void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("1Erro ao abrir\n");
@@ -93,8 +93,8 @@ void metodo111(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 
 	*tempoEntrada = clock() - tempo;
 
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
 		printf("2Erro ao abrir\n");
@@ -129,8 +129,8 @@ void metodo112(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -149,8 +149,8 @@ void metodo112(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 
 	*tempoEntrada = clock() - tempo;
 
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -185,8 +185,8 @@ void metodo113(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -204,8 +204,8 @@ void metodo113(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -240,8 +240,8 @@ void metodo121(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -259,8 +259,8 @@ void metodo121(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -295,8 +295,8 @@ void metodo122(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -314,8 +314,8 @@ void metodo122(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -350,8 +350,8 @@ void metodo123(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -369,8 +369,8 @@ void metodo123(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -405,8 +405,8 @@ void metodo131(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -424,8 +424,8 @@ void metodo131(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -460,8 +460,8 @@ void metodo132(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -479,8 +479,8 @@ void metodo132(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -515,8 +515,8 @@ void metodo133(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	RecordB r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -534,8 +534,8 @@ void metodo133(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -571,8 +571,8 @@ void metodo211(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -590,8 +590,8 @@ void metodo211(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -626,8 +626,8 @@ void metodo212(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -645,8 +645,8 @@ void metodo212(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -681,8 +681,8 @@ void metodo213(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -700,8 +700,8 @@ void metodo213(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -736,8 +736,8 @@ void metodo221(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -755,8 +755,8 @@ void metodo221(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -791,8 +791,8 @@ void metodo222(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -810,8 +810,8 @@ void metodo222(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -846,8 +846,8 @@ void metodo223(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -865,8 +865,8 @@ void metodo223(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -901,8 +901,8 @@ void metodo231(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -920,8 +920,8 @@ void metodo231(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -956,8 +956,8 @@ void metodo232(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -975,8 +975,8 @@ void metodo232(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1011,8 +1011,8 @@ void metodo233(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	Record r;
 	int quant = 0, cont1 = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1030,8 +1030,8 @@ void metodo233(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL)
 		printf("Erro ao abrir\n");
@@ -1067,8 +1067,8 @@ void metodo311(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1084,8 +1084,8 @@ void metodo311(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1118,12 +1118,12 @@ void metodo312(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
+	tempo = clock();
 	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
 	else {
-		tempo = clock();
 		while(!feof(file1)){
 			result = fgets(linha, 100, file1);
 			if(result){
@@ -1135,8 +1135,8 @@ void metodo312(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1169,8 +1169,8 @@ void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1186,8 +1186,8 @@ void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1209,7 +1209,7 @@ void metodo313(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 }
 
 void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa){
-		clock_t tempo;
+	clock_t tempo;
 	FILE *file1;
 	FILE *file2;
 	char linha[100];
@@ -1220,8 +1220,8 @@ void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1237,8 +1237,8 @@ void metodo321(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1271,8 +1271,8 @@ void metodo322(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1288,8 +1288,8 @@ void metodo322(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1322,8 +1322,8 @@ void metodo323(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada10000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1339,8 +1339,8 @@ void metodo323(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1373,8 +1373,8 @@ void metodo331(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1390,8 +1390,8 @@ void metodo331(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa5000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1424,8 +1424,8 @@ void metodo332(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1441,8 +1441,8 @@ void metodo332(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa10000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
@@ -1475,8 +1475,8 @@ void metodo333(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	double valor;
 	int cont1 = 0, quant = 0, cont2 = 0;
 
-	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 	tempo = clock();
+	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
 
 	if(file1 == NULL)
 		printf("Erro ao abrir\n");
@@ -1492,8 +1492,8 @@ void metodo333(clock_t *tempoEntrada, clock_t *tempoPesquisa){
 	fclose(file1);
 
 	*tempoEntrada = clock() - tempo;
-	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
 	tempo = clock();
+	file2 = fopen("Arquivos/Pesquisa100000.txt", "r");
  
 	if(file2 == NULL){
 	 	printf("Erro ao abrir\n");
