@@ -239,13 +239,13 @@ Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.000000 | 55000
+0.015625 | 0.015625 | 55000
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.000000 | 110000
+0.000000 | 0.015625 | 110000
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
