@@ -5,7 +5,10 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 <!--ts-->
    * [Copilação](#Copilação)
    * [ExplicaçãoDoCodigo](#ExplicaçãoDoCodigo)
-   * [Resultados](#Resultados)   
+   * [Resultados](#Resultados) 
+   	*[ArvoreBinaria](#ArvoreBinaria)
+	*[ArvoreAVL](#ArvoreAVL)
+	*[ArvoreRed-Black](#ArvoreRed-Black)
    * [Conclusão](#Conclusão)  
 <!--te-->
 
@@ -177,7 +180,7 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
 
 Nesse topico sera apresentados os resultados encontrados em tipo de arvore com suas diferentes implementações de entradas e pesquisas.
 
-#### Arvore Binaria:
+#### ArvoreBinaria:
 
 Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
@@ -233,7 +236,7 @@ Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
 2.125000 | 0.078125 | 3300000
 
-#### Arvore AVL:
+#### ArvoreAVL:
 
 Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
@@ -289,7 +292,7 @@ Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
 2.750000 | 0.062500 | 1900000
 
-#### Arvore Red-Black:
+#### ArvoreRed-Black:
 
 Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
