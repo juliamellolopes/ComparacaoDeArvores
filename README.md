@@ -6,9 +6,9 @@ Nesse trabalho poderemos teremos um algoritmo que possibilita ver o custo de tem
    * [Copilação](#Copilação)
    * [ExplicaçãoDoCodigo](#ExplicaçãoDoCodigo)
    * [Resultados](#Resultados) 
-   	*[ArvoreBinaria](#ArvoreBinaria)
-	*[ArvoreAVL](#ArvoreAVL)
-	*[ArvoreRed-Black](#ArvoreRed-Black)
+   		* [ArvoreBinaria](#ArvoreBinaria)
+   		* [ArvoreAVL](#ArvoreAVL)
+   		* [ArvoreRed-Black](#ArvoreRed-Black)
    * [Conclusão](#Conclusão)  
 <!--te-->
 
