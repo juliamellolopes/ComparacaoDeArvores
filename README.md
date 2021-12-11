@@ -186,55 +186,55 @@ Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.015625 | 65000
+ 0.001240 | 0.005145 | 65000
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.015625 | 130000
+0.001363 | 0.009780 | 130000
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.078125 | 1300000
+ 0.001129 | 0.005021 | 1300000
 
 Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.015625 | 0.000000 | 65000
+0.013229 | 0.004959 | 65000
 
 Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.015625 | 0.015625 | 130000
+0.012798 | 0.009870 | 130000
 
 Resultados de 10.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.015625 | 0.062500 | 1300000
+0.012992 | 0.099874 | 1300000
 
 Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-1.828125 | 0.000000 | 165000
+2.054963 | 0.007182 | 165000
 
 Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-1.703125 | 0.000000 | 330000
+ 2.134810 | 0.013101 | 330000
 
 Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-2.125000 | 0.078125 | 3300000
+2.120398 | 0.135466 | 3300000
 
 #### ArvoreAVL:
 
@@ -242,55 +242,55 @@ Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.015625 | 0.015625 | 55000
+0.001129 | 0.005021 | 55000
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.015625 | 110000
+ 0.001897 | 0.010589 | 110000
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.000000 | 0.015625 | 110000
+ 0.001800 | 0.009683 | 110000
 
 Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.031250 | 0.000000 | 65000
+0.021939 | 0.005371 | 65000
 
 Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.015625 | 0.000000 | 130000
+0.023178 | 0.011984 | 130000
 
 Resultados de 10.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-0.015625 | 0.093750 | 1300000
+0.023572 | 0.102352 | 1300000
 
 Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-2.609375 | 0.000000 | 95000
+3.538362 | 0.005707 | 95000
 
 Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-2.968750 | 0.000000 | 190000
+3.519760 | 0.010620 | 190000
 
 Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-2.750000 | 0.062500 | 1900000
+3.634962 | 0.108947 | 1900000
 
 #### ArvoreRed-Black:
 
@@ -298,56 +298,62 @@ Resultados de 1.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.001412 | 0.004448 | 51147
 
 Resultados de 1.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.001257 | 0.008723 | 102289
 
 Resultados de 1.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.001273 | 0.086125 | 1023064
 
 Resultados de 10.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.012786 | 0.004578 | 68182
 
 Resultados de 10.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.013422 | 0.008910 | 136161
 
 Resultados de 10.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+0.012720 | 0.096815 | 1360819
 
 Resultados de 1.000.000 entradas e 5.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.123798 | 0.008217 | 101972
 
 Resultados de 1.000.000 entradas e 10.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.112824 | 0.015789 | 204087
 
 Resultados de 1.000.000 entradas e 100.000 dados pesquisados:
 
 Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 :--------- | :------: | -------:
-Valor | Valor | Valor
+2.080260 | 0.211222 | 2037743
 
 ### Conclusão
 
 Ao analisar os dados mostrados podemos concluir: 
+
+![image](https://user-images.githubusercontent.com/84408875/145692492-bed5fa85-8dee-4300-b53a-eade45ea69e0.png)
+
+![image](https://user-images.githubusercontent.com/84408875/145692669-8a2a0198-a3a6-4926-934b-d411bf694114.png)
+
+![image](https://user-images.githubusercontent.com/84408875/145692840-3c2c5b27-f8c2-4782-9527-0e61d2e65b7b.png)
