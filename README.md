@@ -350,10 +350,12 @@ Tempo de entrada |Tempo de Pesquisa    | Quantidade de pesquisas
 
 ### Conclusão
 
-Ao analisar os dados mostrados podemos concluir: 
+Ao analisar os dados podemos fazer as seguintes graficos: 
 
 ![image](https://user-images.githubusercontent.com/84408875/145692492-bed5fa85-8dee-4300-b53a-eade45ea69e0.png)
 
 ![image](https://user-images.githubusercontent.com/84408875/145692669-8a2a0198-a3a6-4926-934b-d411bf694114.png)
 
 ![image](https://user-images.githubusercontent.com/84408875/145692840-3c2c5b27-f8c2-4782-9527-0e61d2e65b7b.png)
+
+Analisando os graficos podemos conclui que a AVL tem um maio tempo de entrada e a binaria um maior tempo de pesquisa. Ja a red-black tem uma menor quantidade de pesquisas ppara achar os itens.
