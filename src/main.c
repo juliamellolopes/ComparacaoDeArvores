@@ -6,11 +6,18 @@ void menu();
 void entradas();
 void pesquisas();
 void criandoArquivos();
+// void correcao(TreeRB *root);
 
 int main(){
 	int arv = 0, entrada = 0, pesquisa = 0;
 	clock_t tempoEntrada;
 	clock_t tempoPesquisa;
+
+
+	// TreeRB *root;
+	// creatTreeRB(&root);
+	// correcao(root);
+
 
 	menu();
 	scanf("%d",&arv);
@@ -142,3 +149,35 @@ void criandoArquivos(){
 
 	fclose(file);
 }
+
+// void correcao(TreeRB *root){
+// 	FILE *file1;
+// 	//FILE *file;
+// 	char linha[100];
+// 	char *result;
+// 	double valor;
+// 	int cont =0;
+
+// 	//file = fopen("teste.txt", "w");
+
+// 	file1 = fopen("Arquivos/Entrada1000000.txt", "r");
+
+// 	if(file1 == NULL)
+// 		printf("Erro ao abrir\n");
+// 	else {
+// 		while(!feof(file1)) {
+// 			result = fgets(linha, 100, file1);
+// 			if(result){
+// 				valor = atof(linha);
+// 				insertTreeRB(&root, &valor, &cont);
+
+// 				// sprintf(linha, "%6lf", valor);
+// 				// strcat(linha, "\n");
+// 				// fputs(linha, file);
+// 			} 
+// 		}
+// 	}
+// 	fclose(file1);
+// 	//fclose(file);
+// 	printf("%d\n", cont);
+// }

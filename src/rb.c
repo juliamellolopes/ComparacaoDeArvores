@@ -21,14 +21,16 @@ void insertTreeRB(TreeRB **root, double data, int *cont1) {
         temp->RC    = nill;
         temp->key   = data;
         temp->color = black;
-        chk         = check(*root,data,0);
+        chk         = check(*root, data,0);
         if(chk == 0){
             rb_insert(*root, nill, temp, root);
             (*cont1)++;
         }
         else{
-             printf("Node already registered: %lf\n", data);   fflush(stdout);
+            printf("Node already registered: %lf\n", data);
             free(temp);
+            // *data = *data + 0.001;
+            // insertTreeRB(root, data, cont1);
         }
     }
 }
