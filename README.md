@@ -358,4 +358,4 @@ Ao analisar os dados podemos fazer as seguintes graficos:
 
 ![image](https://user-images.githubusercontent.com/84408875/145692840-3c2c5b27-f8c2-4782-9527-0e61d2e65b7b.png)
 
-Analisando os graficos podemos conclui que a AVL tem um maio tempo de entrada e a binaria um maior tempo de pesquisa. Ja a red-black tem uma menor quantidade de pesquisas ppara achar os itens.
+Analisando os graficos podemos conclui que a AVL tem um maio tempo de entrada e a binaria um maior tempo de pesquisa. Ja a red-black tem uma menor quantidade de pesquisas para achar os itens, como tambem menor tempo de entrada e pesquisa. Podemos então concluir que a melhor estrutura seria a red-black.
