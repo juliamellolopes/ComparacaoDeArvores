@@ -354,21 +354,12 @@ Ao analisar os dados podemos fazer as seguintes graficos:
 
 ![image](https://user-images.githubusercontent.com/84408875/146096434-bebb30e2-90d8-4bda-87c4-3264f1a0965a.png)
 ![image](https://user-images.githubusercontent.com/84408875/146096489-7abd23ed-1d4e-4ef5-9db7-5105383c9b8d.png)
-As avl crescecom o tempo , e a binaria ser para entrada pequena , e rb entradas maiores
+
+Nos graficos acima é possivel ver os resultados todo tempo das entradas, e com ele é possivel afirmar que o tempo da avl cresce a medida que se o numero de entradas aumenta o tempo consequentimente aumenta tambem, assim  como a arvore binaria, o que mostra que são estruturas de entradas pequenas. Fzendo com que a red-black seja melhor com entradas em quantidades maiores.
+
 ![image](https://user-images.githubusercontent.com/84408875/146096504-eb0da779-6525-42b1-ac8d-1b09bdca9110.png)
 ![image](https://user-images.githubusercontent.com/84408875/146097099-e0c472b2-e5ee-4f53-9816-d11a252179c9.png)
-como os arquivos da ultima pesquisa não tinha todos os valores iguais ela não foi pecorrida toda para saber o tempo, a rb é melhor
-o tempo crece a partir da quantidade realiazada
 
-Analisando os graficos podemos conclui que a AVL tem um maio tempo de entrada e a binaria um maior tempo de pesquisa. Ja a red-black tem uma menor quantidade de pesquisas para achar os itens, como tambem menor tempo de entrada e pesquisa. Podemos então concluir que a melhor estrutura seria a red-black.
+Nos graficos podemos observar os resultados do tempo de pesquisa, a avl mostra ser a estrutura com maior tempo, porem no ultimo arquivo ela teve maior eficiencia pq ele não percorreu toda a arvore para achar os valores, mas se observarmos o grafco de quantidade podemos ver o gasto que ela teve.
 
-
-- 3.1) - Qual das estruturas é mais rápida para pesquisa e porquê?
-	-
-
-- 3.2) - Há diferença de tempo das inserções, o que afeta cada estrutura em termos de mecanismo de manipulação / balanceamento?
-	-
-
-- 3.3) - Considerando as três bases de entrada, para quais você indica cada uma das estruturas e porquê?
-	- 
-	
+Analogo a isso, podemos conclui que a AVL tem um maio tempo de entrada e a binaria um maior tempo de pesquisa. Ja a red-black tem uma menor quantidade de pesquisas para achar os itens, como tambem menor tempo de entrada e pesquisa. Podemos então concluir que a melhor estrutura seria a red-black.
